@@ -1,0 +1,15 @@
+Documento
+HTML
+head
+body
+contenido
+SECTION -> bloques principales (datos personales, estudios, experiencia...)
+ARTICLE -> apartados dentro de los bloques
+H1 titulo principale
+H2 titulo de seccion
+H3 titulo de apartado
+P textos
+UL o OL listas
+IMG fotografia
+A enlaces
+STRONG y EM resaltar texto
