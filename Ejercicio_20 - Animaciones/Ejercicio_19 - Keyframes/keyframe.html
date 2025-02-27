@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rueda {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: gray;
+            border: 35px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 80px;
+            font-size: 4rem;
+            animation-name: carrera;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(.45, -0.07, .78, .91);
+        }
+
+        #btn_rodar:checked+.rueda {
+            animation-play-state: paused;
+        }
+
+        .pista {
+            width: 1200px;
+            border-bottom: 2px solid;
+        }
+
+        #btn_rodar {
+            display: none;
+        }
+
+        .etiqueta {
+            border: 1px solid;
+            padding: .2rem .5rem;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: gainsboro;
+        }
+
+        @keyframes carrera {
+            0% {
+               left: 0;
+               bottom: 0;
+            }
+            47% {
+               bottom: 0; 
+            }
+            50% {
+               bottom: 20px;
+            }
+            85% {
+                bottom: 0;
+            }
+            100% {
+                left: 1050px;
+                bottom: 0;
+                transform: rotate(1080deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Uso de animaciones mediante keyframes</h1>
+        <div class="pista">
+            <label for="btn_rodar" class="etiqueta">On/Off</label>
+            <input type="checkbox" name="btn_rodar" id="btn_rodar">
+            <div class="rueda">X</div>
+        </div>
+    </div>
+</body>
+
+</html>

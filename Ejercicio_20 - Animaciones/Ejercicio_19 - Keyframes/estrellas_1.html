@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votaciones con keyframes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @keyframes votacion {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80%;
+            }
+        }
+        .fila {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aliceblue;
+            padding: 1rem;
+            margin: 2rem 0;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .etiqueta {
+            font-size: 2rem;
+            border: 1px solid;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            background-color: antiquewhite;
+            color: chocolate;
+            width: 10%;
+            text-align: center;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        .banda {
+            font-size: 4rem;
+            line-height: 5rem;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation-name: votacion;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-play-state: paused;
+            animation-fill-mode: forwards;
+        }
+        .oculto:checked +  .etiqueta {
+            background-color: chocolate;
+            color: antiquewhite;
+        }
+        .oculto:checked + .etiqueta + .banda {
+            animation-play-state: running;
+        }
+        .oculto:not(:checked) + .etiqueta + .banda {
+            animation-fill-mode: backwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Deja tu valoración</h1>
+        <main>
+            <div class="fila">
+                <input type="checkbox" name="ck1" id="ck1"                class="oculto">
+                <label for="ck1" class="etiqueta">Voto 1</label>
+                <p class="banda">&#x2B50;</p>
+            </div>
+            <div class="fila">
+                <input type="checkbox" name="ck2" id="ck2"               class="oculto">
+                <label for="ck2" class="etiqueta">Voto 2</label>
+                <p class="banda">&#x2B50; &#x2B50;</p>
+            </div>
+            <div class="fila">
+                <input type="checkbox" name="ck3" id="ck3"               class="oculto">
+                <label for="ck3" class="etiqueta">Voto 3</label>
+                <p class="banda">&#x2B50; &#x2B50; &#x2B50; </p>
+            </div>
+            <div class="fila">
+               <input type="checkbox" name="ck4" id="ck4"
+                    class="oculto"> <label for="ck4" class="etiqueta">Voto 4</label>
+                <p class="banda">&#x2B50; &#x2B50; &#x2B50; &#x2B50;</p>
+            </div>
+            <div class="fila">
+                <input type="checkbox" name="ck5" id="ck5"
+                    class="oculto"><label for="ck5" class="etiqueta">Voto 5</label>
+                <p class="banda">&#x2B50; &#x2B50; &#x2B50; &#x2B50; &#x2B50;</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
