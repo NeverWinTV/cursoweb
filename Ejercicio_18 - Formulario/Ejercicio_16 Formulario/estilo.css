@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.container {
+    width:90%;
+    margin:3% auto;
+
+}
+
+.form-datos {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap:20px;
+    margin:20px auto;
+    padding:20px;
+    background-color:lightgray;
+    border-radius:15px;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    border:1px solid white;
+    width: 32%;
+    height:100px;
+    padding:10px;
+}
+
+.form-group,.form-group2,.form-group3 label {
+
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.form-group input {
+    
+    margin-top:15px; 
+    width:40%;
+    
+}
+
+
+.form-group2,.form-group3 {
+
+    border:1px solid white;
+    width: 49%;
+    height:120px;
+    text-align:left;
+    padding-top: 10px;
+    padding-left:10px;
+    
+}
+
+
+.form-group2 input {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.form-group2 input[type="radio"]:first-of-type,input[type="checkbox"]:first-of-type {
+    margin-top:15px;
+    
+}
+
+
+.form-group2 select {
+    margin-top:10px;
+    width:40%;
+}
+
+.form-group3 {
+
+    height:auto;
+    padding-bottom:10px;
+}
+
+.form-group3 textarea {
+    margin-top:10px;
+    width:80%;
+    height:100px;
+}
+
+.form-group3 input[type="file"] {
+    margin-top:10px;
+
+}
+
+.form-send {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+}
+.form-send input {
+
+    border: 1px solid;
+    width: auto;
+    padding: 3px;
+    display:block;
+    margin:0 auto;
+}

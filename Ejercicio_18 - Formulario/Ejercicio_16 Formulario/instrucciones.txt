@@ -1,0 +1,5 @@
+Elabora el formulario según la imagen de muestra. Usa las etiquetas de HTML adecuadas para cada tipo de elemento y aplica el CSS necesario para que tenga la apariencia de la muestra.
+Crea el formulario completo, con etiqueta form, el atributo action será datos.php, y method post. Usa el enctype adecuado para poder enviar un archivo adjunto.
+A tener en cuenta:
+Los textos de color blanco que aparecen en los cuadros son explicativos para ese elemento, no tienen que estar incluidos en tu formulario.
+El botón Borrar limpia los datos que pueda contener el formulario, el botón Guardar no hace nada, está disponible para que se le pueda  asociar una función de JavaScript.

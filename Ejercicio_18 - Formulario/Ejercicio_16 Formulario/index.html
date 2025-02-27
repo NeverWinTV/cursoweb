@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <title>Ejercicio 16 - Formulario</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+        <form action="datos.php" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="form-datos">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" tabindex="1" required>    
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" tabindex="2" placeholder="correo@dominio.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" tabindex="3" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" tabindex="4" list="telefonos" required>
+            </div>
+            <datalist id="telefonos">
+				<option label="Casa" value="+34 600 000 000"></option>
+				<option label="Trabajo" value="+34 600 000 001"></option>
+                <option label="Emergencias" value="+34 600 000 001"></option>
+			</datalist>
+            <div class="form-group">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha" id="fecha" tabindex="5" required>
+            </div>     
+        <div class="form-group">
+            <label for="horas-estudio">Horas semanales de estudio</label>
+            <input type="range" name="viajeros_res" min="0" max="60" step="5" value="20" tabindex="6">
+        </div>
+        </div>
+        <div class="form-datos">
+            <div class="form-group2">
+                <label for="edad">Selecciona un rango de edad</label><br>
+                <input type="radio" name="edad" id="edad" value="1" tabindex="7" required><label for="edad">Menos de 20</label><br>
+                <input type="radio" name="edad" id="edad" value="2" tabindex="8" required><label for="edad">Entre 20 y 40</label><br>
+                <input type="radio" name="edad" id="edad" value="3" tabindex="9" required><label for="edad">Más de 40</label><br>
+            </div>
+            <div class="form-group2">
+            <label for="intereses">Temas de Interes</label><br>
+            <input type="checkbox" name="intereses" id="intereses" value="1" tabindex="10" required><label for="intereses">Tipografía</label><br>
+            <input type="checkbox" name="intereses" id="intereses" value="2" tabindex="11" required><label for="intereses">Ilustración</label><br>
+            <input type="checkbox" name="intereses" id="intereses" value="3" tabindex="12" required><label for="intereses">Fotografía</label><br>
+            </div>
+            <div class="form-group2">
+            <label for="estudios">Estudios Realizados</label><br>
+            <select name="estudios" id="estudios" tabindex="13" required multiple>
+                <option value="1">Educación Secundaria</option>
+                <option value="2">Bachillerato</option>
+                <option value="3">FP Medio</option>
+                <option value="4">FP Superior</option>
+                <option value="5">Diplomatura</option>
+                <option value="6">Licenciatura</option>
+                <option value="7">Master</option>
+                <option value="8">Doctorado</option>
+            </select>
+            </div>
+            <div class="form-group2">
+                <label for="horario">Selecciona un turno de clase</label><br>
+                <select name="horario" id="horario" tabindex="14" required>
+                    <option value="1">Mañanas</option>
+                    <option value="2">Mediodia</option>
+                    <option value="3">Tardes</option>
+                    <option value="4">Noche</option>
+                    <option value="5">Indiferente</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-datos">
+             <div class="form-group3">
+                <label for="comentario">Comentario</label><br>
+                <textarea name="comentario" id="comentario" tabindex="15" required placeholder="Aqui tu comentario"></textarea>
+             </div>
+             <div class="form-group3">
+                <label for="archivo">Sube un archivo</label><br>
+                <input type="file" name="archivo" id="archivo" tabindex="16" required>
+             </div>
+        </div>
+        <div class="form-datos">
+            <div class="form-send">
+                <input type="submit" value="Enviar" tabindex="17">
+                <input type="reset" value="Borrar" tabindex="18">
+                <input type="button" value="Guardar" tabindex="19">
+            </div>                
+        </form>
+        </div>
+    </main>   
+</body>
+</html>

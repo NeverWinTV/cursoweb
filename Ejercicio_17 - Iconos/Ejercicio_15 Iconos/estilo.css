@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --morado: #93278f;
+    --azul: #0996ab;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    width:80%;
+    margin:5% auto;
+
+}
+
+p {
+    margin:40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Menu 1 */
+.menu ul {
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:50px;
+    list-style: none;
+
+}
+
+.menu li a {
+
+    display:block;
+    width:150px;
+    border:2px solid var(--morado);
+    border-radius:10px;
+    font-size:1.2rem;
+    font-weight: 600;
+    text-align:center;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--morado);
+}
+
+.menu li a i {
+    padding-right:10px;
+}
+
+.menu li a:hover {
+    color: var(--azul);
+    text-shadow:2px 1px 3px rgba(184, 9, 9, 0.63);
+    border:2px solid var(--azul);
+}
+
+.menu li a:hover i {
+    color: var(--azul);
+    text-shadow:none;
+
+}
+
+/* Menu 2 */
+
+.menu2 {
+
+    margin-top: 50px;
+}
+.menu2 ul {
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:50px;
+    list-style: none;
+
+}
+
+.menu2 li a {
+
+    display:block;
+    width:150px;
+    border:2px solid var(--morado);
+    border-radius:10px;
+    font-size:1.2rem;
+    font-weight: 600;
+    text-align:center;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--morado);
+}
+
+
+.menu2 li a:hover {
+    color: var(--azul);
+    text-shadow:2px 1px 3px rgba(184, 9, 9, 0.63);
+    border:2px solid var(--azul);
+}
+
+.location::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f3c5";
+    padding-right:10px;
+    text-shadow:none;
+}
+
+.contact::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f075";
+    padding-right:10px;
+    text-shadow:none;
+}
+
+.payout::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f153";
+    padding-right:10px;
+    text-shadow:none;
+}
+
+.cart::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f218";
+    padding-right:10px;
+    text-shadow:none;
+}
+

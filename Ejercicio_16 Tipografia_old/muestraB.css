@@ -1,0 +1,103 @@
+@import url(muestraA.css);
+
+.html p:first-child {
+
+    background-color: #EAEB8B;
+    
+}
+
+.html p:nth-child(2) {
+
+    background-color: #EAEB8B;
+}
+
+.html p:nth-child(3) { 
+
+    background-color: #F8F8D8;
+}
+
+.html p:last-child {
+
+    background-color: #F8F8D8;
+}
+
+.csshead p:first-child {
+
+    background-color:#E5CCC1;
+}
+
+.csshead p:nth-child(2) {
+
+    background-color:#E4E5CE;
+}
+   
+.cssbody p:first-child {
+
+
+    background-color:#CEDFE6;
+}
+
+.cssbody p:nth-child(2) {
+
+    background-color:#CEDFE6;
+    
+
+}
+
+.cssbody p:last-child {
+
+    background-color:#D6D5EB
+
+}
+
+
+
+
+.javascript p:nth-child(2) {
+
+    background-color:#E5CCC1;
+}
+
+.javascript p:nth-child(4) {
+
+    background-color:#D6D5EB;
+}
+
+.javascript p:last-child {
+
+    background-color:#D6D5EB;
+
+}
+
+
+.phpheader {
+
+    background-color:#CEDFE6;
+    
+}
+
+
+.phpmain p:first-child {
+
+    background-color:#CEDFE6;
+}
+
+.phpmain p:nth-child(2) {
+
+    background-color:#E7E7D0;
+}
+
+.phpmain p:nth-child(3) {
+    
+
+    background-color:#D6D5EB;
+
+}
+
+.phpmain p:last-child {
+
+    background-color:#E5CCC1;
+
+
+    
+}
