@@ -1,0 +1,585 @@
+@import url(https://fonts.googleapis.com/css?family=Kelly+Slab:regular);
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800);
+
+:root {
+
+    --azul:#48bbce;
+    --gris-fondo:#F2F2F2;
+    --gris-cuadro:gray;
+    --gris-sombra: #CBCBCB;
+    --texto-cuerpo: 'Dosis', sans-serif;
+    --texto-titulo: 'Kelly Slab', cursive;
+    --margenes: 2rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+
+    margin: 0 .5rem;
+    -webkit-user-select: auto;
+    user-select: none; /* <-- Pongo para que no aparezca en dispositivos moviles la pestaña de discover inferior*/
+     
+}
+
+.container {
+
+    background-color: var(--gris-fondo);
+}
+main {
+
+    font-family: var(--texto-cuerpo);
+    color: var(--azul);
+}
+
+
+h1,h2 {
+    font-family: var(--texto-titulo);
+    line-height: 1;
+    color: var(--azul);
+}
+
+h2 {
+    font-style: italic;
+    margin-bottom: var(--margenes);
+}
+
+h3 {
+
+    display:block;
+    background-color: var(--azul);
+    padding:1rem;
+    color: white;
+    margin-bottom: var(--margenes);
+}
+
+h4 {
+
+    font-size: 1rem;
+}
+
+.logo {
+
+    margin-bottom: var(--margenes);
+}
+
+p {
+    margin-bottom: var(--margenes);
+}
+
+.alumno {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: var(--margenes);
+    gap:1rem;
+}
+
+.ficha {
+
+    width: 28%;       
+    text-align:center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid var(--azul);
+    border-radius: 12px;
+
+}
+
+.ficha img {
+    display:block;
+    text-align:center;
+    width: 97%;
+    margin: 5px;
+}
+
+.nombre {
+
+    display:block;
+    width: 80%;
+    height:auto;
+    font-size: 1rem;
+    position:absolute;
+    color: white;
+    text-align:center;
+    left: 10%;
+    top: 30%;
+    transition: all 1s ease;
+}
+.presentacion {
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--azul);
+    border-radius: 12px;
+    position: absolute;
+    opacity: .6;
+    top: 0;
+    transition: all 1s ease;
+}
+
+.ficha:hover .presentacion {
+    top:100%;
+}
+
+.ficha:hover .nombre {
+
+    top: 100%;
+}
+
+
+
+.sub-content-title {
+
+    display:flex;
+    align-items:center;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom:var(--margenes);
+
+}
+
+h4 {
+    display:block;
+    line-height: 1;
+    font-size: 1rem;
+    padding-right: 4rem;
+    word-spacing: 2px;
+    font-family: var(--texto-titulo);
+    color:var(--azul);
+
+}
+.sublogo {
+
+    width:10%;
+    object-fit: contain;
+
+}
+
+.sombras {
+
+    width: 80%;
+    height: 350px;
+    border: 1px solid var(--azul);
+    overflow: hidden;
+    border-radius: 35%;
+    box-shadow: 4px 4px 4px var(--gris-sombra) inset,
+                -4px -4px 4px var(--gris-sombra) inset;
+    margin:0 auto;
+    font-size: 1.6rem;
+    text-align:justify;
+    line-height: 1;
+    word-spacing: 2;
+    padding: .5rem;
+    margin-bottom: var(--margenes);
+    transition: all 1s ease; 
+    cursor: pointer;
+}
+
+.sombras:hover {
+
+    border-radius: 15px;
+}
+.efecto1 {
+
+    text-align: center;
+    border: 1px solid var(--azul);
+    border-bottom: 2px solid var(--azul);
+    border-right: 2px solid var(--azul);
+    width: 80%;
+    margin:0 auto;
+
+ } 
+
+
+.texto {
+    font-family: var(--texto-titulo);
+    padding:0;
+    font-size:3rem;
+    padding-top: 10px;
+    margin-bottom: -25px
+   
+}
+.reflejo {
+    font-family: var(--texto-titulo);
+    transform: scaleY(-1);
+    opacity: .5;
+    margin-bottom: 10px;
+    font-size:3rem;
+}
+
+.efecto2 {
+
+    margin-top: 2rem;
+    text-align:center;
+    
+}
+
+#animation-btn {
+    display: none;
+}
+
+.btn-efecto {
+
+    width:80%;
+    height:90px;
+    background-color:white;
+    border-radius:15px;
+    margin:1rem auto;
+    padding: 1.5rem;
+    font-size:0;
+    position:relative;
+    transition:all 1s ease;
+    display:block;
+    cursor:pointer;
+    z-index:1;
+
+}
+
+.btn-animacion {
+    position: relative;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: var(--texto-titulo);
+    top:-100px;
+    left:-100px;
+    opacity:0;
+    transition:all 1s ease;
+ 
+}
+
+#animation-btn:checked  + .btn-efecto {
+   font-size: 7vw;
+}
+
+#animation-btn:checked  + .btn-efecto + .btn-animacion{
+    top:0;
+    left:0;
+    opacity:1;
+    transform:rotate(360deg)
+ }
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width:600px) {
+
+    .cabecera {
+
+        display:flex;
+    }
+
+    .logo {
+
+        width:48%;
+    }
+    .ficha .nombre {
+
+        font-size: 1.7rem;
+    }
+    h1 {
+        font-size: 6.7vw;
+    }
+
+    h2 {
+        font-size:5.3vw;
+    }
+
+    h4 {
+        font-size: 5.3vw;
+    }
+    .sublogo {
+
+        width:7%;
+    }
+
+    .sombras {
+
+        width: 80%;
+        height: auto;
+        padding-top:1.5rem;
+        border-radius: 200px;
+
+    }
+    .efectos p {
+        padding-left:2rem;
+    }
+    .texto {
+        font-family: var(--texto-titulo);
+        padding:0;
+        font-size:3vw;
+        padding-top: 8px;
+        margin-bottom: -4.7%;
+        text-align:left;
+        margin-left:35%;
+       
+    }
+    
+    .reflejo {
+        font-family: var(--texto-titulo);
+        opacity: .5;
+        transform:scaleX(-1);
+        font-size:3vw;
+        text-align:left;
+        margin-right:35%;
+    }
+
+    .btn-efecto {
+
+        width:50%;
+    }
+
+    .btn-animacion {
+
+        font-size: 7rem;
+    }  
+    
+    #animation-btn:checked  + .btn-efecto {
+        font-size: 4vw;
+ 
+     }
+}
+
+@media all and (min-width:740px) {
+
+    .subtittle {
+
+        font-size: 3.3vw;  
+        margin-top: -8%;
+        margin-left: 65%;  
+    }
+    .fichas {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+
+    .alumno {
+
+        width:48%;
+    }
+
+    .fichas p {
+
+        display:block;
+        width:48%;
+        order:1;
+        font-size: 1.5rem;
+    }
+
+    .ficha img {
+
+        width:93%;
+    }
+    .ficha .nombre {
+
+        font-size:1.2rem;
+        left:25%;
+
+        
+    }
+
+    .texto {
+    transform: rotate(-10deg) scaleX(-1);
+    display: inline-block;
+    margin-right:50%;
+    position:relative;
+    top:2vh;
+    }
+
+    .reflejo {
+        transform: rotate(10deg) scaleX(-1);
+        display:inline-block;
+        margin-left:50%;
+        position:relative;
+        top: -1.5vh;
+
+    }
+}
+
+@media all and (min-width:900px) { /* Ajuste reflejo entre 900 y 1024*/
+
+    .texto {
+        transform: rotate(-10deg) scaleX(-1);
+        display: inline-block;
+        margin-right:50%;
+        position:relative;
+        top:3vh;
+        }
+    
+        .reflejo {
+            transform: rotate(10deg) scaleX(-1);
+            display:inline-block;
+            margin-left:50%;
+            position:relative;
+            top: -1.5vh;
+    
+        }
+
+}
+
+@media all and (min-width:1024px) {
+
+    body {
+        -webkit-user-select: auto;
+        user-select:auto;
+        
+
+    }
+
+    .title,.subtittle {
+
+        text-shadow: 2px 2px 2px darkblue;
+    }
+
+    .title {
+
+        font-size: 4.5rem;
+    }
+    .subtittle {
+     margin-top: 10%;
+     margin-left: 0;
+    }
+    .principal {
+
+        display:flex;
+        flex-wrap:wrap;
+        gap:2%; 
+    }
+    .nombre {
+        font-size:.8rem;
+    }
+    .main-content:first-child {
+
+        width:25%;
+        background-color: var(--gris-cuadro);
+
+    }
+
+    .main-content:first-child  h3{
+
+    padding-left: 2.5rem;
+    }
+    .fichas {
+
+        padding:.5rem;
+    }
+
+    .ficha .nombre {
+        left: 12%;
+        font-size: 1.3vw;
+        width:80%;
+        text-align:center;
+
+    }
+    .ficha img {
+        width: 92%;
+        margin:0 auto;
+    }
+    h3 {
+
+        font-size: 3vw;
+        font-family: var(--texto-titulo);
+    }
+
+    .main-content {
+        width:73%;
+    }
+
+    .fichas p {
+        font-size:2rem;
+        width: 100%;
+        text-align:justify;
+    }
+
+    .alumno {
+
+        width:100%;
+    }
+
+    .secundario {
+
+        display:flex;
+    }
+
+    h4 {
+
+        font-size: 1.2rem;
+    }
+
+    .sublogo {
+
+        width:15%;
+        padding-left: 1rem;
+        object-fit: contain;
+    }
+    .sub-content {
+
+        width:50%;
+        border-right:1px solid;
+    }
+
+    .sub-content:first-child .sublogo {
+        padding-left:0;
+        width:11%;
+        object-fit: contain;
+
+    }
+
+    .sub-content:last-child {
+
+        width:50%;
+        border-right:0px solid;
+    }
+
+    #animation-btn:checked  + .btn-efecto {
+        font-size: 2.2vw;
+     
+    }
+
+
+.sombras {
+
+    width: 80%;
+    height: fit-content;
+    padding-top:1.3rem;
+    border-radius: 200px;
+
+}
+
+.btn-efecto {
+
+    width:80%;
+}
+
+.texto {
+    transform:scaleX(-1) rotate(20deg); 
+    display: inline-block;
+    margin-left:30%;
+    position:relative;
+
+
+    }
+
+.reflejo {
+    transform:scaleX(-1) rotate(-20deg);
+    display:inline-block;
+    margin-left:30%;
+    margin-top:19%;
+    position:relative;
+
+    }
+}
