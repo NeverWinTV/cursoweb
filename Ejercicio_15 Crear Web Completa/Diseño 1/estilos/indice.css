@@ -1,0 +1,64 @@
+/* Estilos básicos y reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu-container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Imagen del logo */
+.logo img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+    background-color: #0077cc;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #0077cc;
+    border-color: #0077cc;
+}
