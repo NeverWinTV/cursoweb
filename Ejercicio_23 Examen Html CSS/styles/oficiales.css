@@ -1,0 +1,74 @@
+@import url(main.css);
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+    
+}
+
+p {
+
+    font-size:1.2rem;
+    margin-bottom:1rem;
+    text-align: justify;
+}
+
+.ofi-intro a {
+
+    display:block;
+    width: 20%;
+    background-color: #0056b3;
+    color: white;
+    height:2rem;
+    font-size: 1.5rem;
+    text-align:center;
+    margin-top:50px;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px #6b7580;
+}
+
+.ofi-cursos {
+
+margin-top: 50px;
+display:flex;
+justify-content: space-evenly;
+}
+
+.fp-medio,.fp-sup {
+    width: 48%;
+}
+
+
+details[open] {
+
+    border:1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+    padding:10px;
+}
+
+summary {
+    font-size:1.3rem;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.fp-medio ul,.fp-sup ul {
+    padding-left: 6%;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.fp-medio,.fp-sup ul > li {
+    font-size: 1.2rem;
+}
+
+.fp-medio ul > li::before,.fp-sup ul > li::before {
+content: "•"; 
+color:orange; 
+font-size: 1.2rem; 
+margin-right: 0.5rem;
+display: inline-block;
+}

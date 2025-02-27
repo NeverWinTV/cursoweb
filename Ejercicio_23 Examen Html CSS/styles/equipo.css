@@ -1,0 +1,41 @@
+@import url(main.css);
+
+h3 {
+    font-size: 2.5rem;
+    margin: 1rem;
+    color: #4b84c0;
+    text-align:center;
+    text-shadow: 2px 2px 5px #a7bfd9;
+    
+}
+.equipo {
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:30px;
+}
+
+.ficha-profe {
+
+    margin-top: 30px;
+    width: 33%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.ficha-profe img {
+
+    width:80%;
+    height:200px;
+    display:block;
+    border:1px solid;
+    margin:0 auto 10px;
+    border-radius: 10px;
+
+}
+
+.ficha-profe p {
+
+    font-size: 1.4rem;
+}

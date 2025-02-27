@@ -1,0 +1,74 @@
+@import url(main.css);
+
+.redes {
+
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+.facebook {
+    width: 500px;
+    height: 505px;
+    border:1px solid #d0d9de;
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.twitter {
+    
+    width: 40%;
+    height: 500px;
+    border:1px solid #d0d9de;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.twitter a {
+    display:block;
+    text-align:center;
+    margin-top:42%;
+    font-size: 3rem;
+    color:lightgray;
+}
+.face {
+    display:flex;
+    justify-content: space-evenly;
+    gap:20px;
+
+}
+
+.fb-comment {
+    position:relative;
+    border:1px solid;
+    background-color: aliceblue;
+    padding:5px;
+    border-radius:15px;
+    width: 23%;
+    box-shadow: 3px 3px 7px gray;
+}
+
+.usr-img {
+
+    display:block;
+    width:50px;
+    height:50px;
+    border: 2px solid #0056b3;
+    border-radius: 50%;
+}
+
+.usr-name {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    position:absolute;
+    top:10%;
+    left:20%;
+    text-decoration: underline;
+    
+}
+
+.usr-comment {
+    margin-top: 20px;
+    text-align: justify;
+}

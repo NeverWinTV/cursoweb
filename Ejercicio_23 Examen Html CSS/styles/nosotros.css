@@ -1,0 +1,87 @@
+@import url(main.css);
+
+.nosotros {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-nosotros {
+    display: block;
+    width: 40%;
+    border-radius: 10px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.nosotros h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+    
+}
+
+.nosotros p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+
+.nosotros > ul {
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.nosotros ul li {
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.nosotros ul li::before {
+    content: "•"; 
+    color:orange; 
+    font-size: 1.2rem; 
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
+
+
+.envio {
+    display:block;
+    max-width:20%;
+    margin:0 auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    box-shadow: 5px 3px 5px lightskyblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+}
+
+.envio > a {
+
+    display:block;
+    text-align:center;
+    padding: 5px;
+    color: white;
+}
+
+.envio:hover {
+    background-color: #0056b3;
+}
+
+.envio:active {
+
+    box-shadow:none;
+}
+
