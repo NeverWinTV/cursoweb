@@ -1,0 +1,171 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+
+    color: #6FC8D8; 
+    font-family: "Kelly Slab", serif;
+}
+
+.titcab {
+
+    font-size:1.3rem;
+
+   
+}
+
+h3 {
+
+    margin:5% 0; 
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin:5% 0;
+}
+
+@media all and (min-width:600px) {
+
+    .encabezado {
+
+        display:flex;
+        justify-content: center;
+        gap: 3%;
+
+    }
+
+    .imgcab,.titcab {
+
+        width:47%;
+    }
+
+    .titcab {
+
+        font-size:2.5rem;
+    }
+
+    h3,h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    p {
+        font-size:1.2rem;
+    }
+
+    #bloque2_cuerpo {
+        position:relative;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .col-b {
+        width:47%;
+        padding-left:10px;
+    }
+    
+    .col-b p {
+        margin:5% 0;
+
+    }
+
+    .col-b:last-child {
+
+        position:absolute;
+        right:0;
+        top:32%;
+    }
+    
+}
+
+@media all and (min-width:960px) {
+
+    .cont_blq p {
+        margin-left:1%;
+    }
+    .imgcab {
+        width: 35%;
+        margin-top:1%;
+    }
+
+    .titcab {
+        width:60%;
+        font-size:3.5rem;
+        text-align: justify;
+        line-height: 4rem;    
+        padding: 0 2%;
+    }
+
+    h3,h2 {
+
+        margin:3%;
+    }
+
+}
+
+@media all and (min-width:1220px) {
+
+    .titcab {
+        font-size: 3.9rem;
+        text-align:left;
+        margin-top:1%;
+        line-height: 4.5rem;
+        margin-left: 1%;
+    }
+    .imgcab {
+        margin-left:1%;
+    }
+    #cuerpo {
+        display:flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    #bloque1_cuerpo {
+       width:77%;
+        margin:1%;
+        background-color:#808080;
+    }
+
+    #bloque2_cuerpo {
+        display:flex;
+        flex-wrap:wrap;
+        margin:0;   
+       }
+       .col-b {
+           width:48%;
+           text-align: justify;
+           margin-right:2%;
+       }
+
+
+
+       .col-b p {
+           padding-left:2%;
+       }
+    .col-b:last-child {
+        position:relative;
+        top:-32.5%;
+        left:50%;       
+    }
+
+    @media all and (min-width:1440px) {
+
+        .imgcab {
+            width:42%;
+        }
+
+        .titcab {
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+    }
+}
+
