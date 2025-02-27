@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <style>
+        .cabecera-tabla {
+            background-color: darkblue;
+            color: aqua;
+        }
+
+        td:not(:first-child) {
+            text-align: center;
+        }
+
+        .col-1 {
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        .col-centro {
+            background-color: aquamarine;
+        }
+
+        .col-5 {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Trabajo con Tablas en HTML</h1>
+        <p>Las 3 etiquetas principales para crear una tabla son:</p>
+        <ul>
+            <li><strong>table -> </strong><em>Crea la estructura princpial de la tabla</em></li>
+            <li><strong>tr -> </strong><em>Crea las filas de la tabla</em></li>
+            <li><strong>td -> </strong><em>Crea cada una de las celdas con datos de la tabla</em></li>
+        </ul>
+        <h2>Ejemplo</h2>
+        <table>
+            <caption>
+                Curso Desarrollo Web 2024-25
+            </caption>
+            <thead>
+                <tr>
+                    <td colspan="3">Listado de Alumnos</td>
+                </tr>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido 1</th>
+                    <th>Apellido 2</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2">Número de inscritos</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>algo</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Joan</td>
+                    <td>Moreno</td>
+                    <td>Santaeulalia</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Raúl</td>
+                    <td>Román</td>
+                    <td>Paterna</td>
+                </tr>
+                <tr>
+                    <td>Delgado</td>
+                    <td>Molina</td>
+                </tr>
+                <tr>
+                    <td>Tania</td>
+                    <td>Rodríguez</td>
+                    <td>Ballart</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Otras etiquetas necesarias para trabajar con tablas:</p>
+        <ul>
+            <li><strong>th => </strong><em>Crea encabezados de tabla</em></li>
+            <li><strong>caption => </strong><em>Permite añadir un título de tabla</em></li>
+            <li><strong>thead => </strong><em>Define las filas que forman el encabezado de la tabla</em></li>
+            <li><strong>tbody => </strong><em>Define el conjunto de datos de la tabla (sin encabezado ni pie)</em></li>
+            <li><strong>tfoot => </strong><em>Define la zona de pie de datos de la tabla</em></li>
+        </ul>
+        <h2>Uso de etiquetas de formato de columnas en tablas</h2>
+        <p>En este caso vamos a usar las etiquetas:</p>
+        <ul>
+            <li><strong>colgroup => </strong><em>Selecciona el grupo de columnas de la tabla sobre las que aplicar
+                    formato</em></li>
+            <li><strong>col => </strong><em>Define la columna o conjunto de columnas para recibir un formato
+                    específico</em></li>
+        </ul>
+        <table>
+            <caption>
+                Resultados de la evaluación
+            </caption>
+            <colgroup>
+                <col class="col-1">
+                <col span="3" class="col-centro">
+                <col class="col-5">
+            </colgroup>
+            <thead class="cabecera-tabla">
+                <tr>
+                    <th>Alumno</th>
+                    <th>Módulo 1</th>
+                    <th>Módulo 2</th>
+                    <th>Módulo 3</th>
+                    <th>Final</th>
+                </tr>
+            </thead>
+            <tfoot class="cabecera-tabla">
+                <tr>
+                    <td>Número de Aprobados</td>
+                    <td colspan="3"></td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Número de suspendidos</td>
+                    <td colspan="3"></td>
+                    <td>1</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Alumno 1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 6</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 7</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 8</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 9</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Alumno 10</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

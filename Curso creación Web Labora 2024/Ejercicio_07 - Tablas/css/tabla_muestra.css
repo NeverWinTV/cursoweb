@@ -1,0 +1,56 @@
+* {
+    width:100;
+    top:0;
+    left:0;
+}
+
+.tabla {
+    width:60%;
+    margin:0 auto;
+    font-family: Verdana;
+    
+
+}
+table {
+    border-collapse: collapse;
+    text-align:right;
+    margin: 0 auto;
+    
+}
+
+th {
+    border:1px solid;
+    text-align: center;
+    
+}
+
+td {
+    border:1px solid;
+    width:auto;  
+}
+
+.centro {
+    width:100px;
+}
+
+.porcentaje {
+    width:200px;
+}
+
+tfoot td {
+
+    background-color: lightgreen;
+    border:0 solid lightgreen;
+    font-weight: bold;
+    text-align:center;
+}
+
+
+
+tfoot td:first-child {
+    text-align:left;
+}
+
+tfoot td:last-child {
+    text-align:right;
+}
