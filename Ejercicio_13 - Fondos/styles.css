@@ -1,0 +1,41 @@
+.contenedor {
+    width:60%;
+    margin:0 auto;
+}
+
+p {
+    background-color: #A8A8A8;
+    color:white;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding-left: 40px;
+}
+
+p:first-child {
+    background-image: url(imagenes/clock.svg),url(imagenes/cog.svg);
+    background-position: left right;
+    background-position-x: 1.4%,100%;
+    background-size: 1rem,contain;
+}
+
+p:nth-child(2) {
+    background-image: url(imagenes/mail.svg),url(imagenes/cog.svg);
+    background-position: left,right;
+    background-position-x: 1.4%,100%;
+    background-size: 1rem,contain;
+}
+
+p:nth-child(3) {
+    background-image: url(imagenes/phone.svg),url(imagenes/cog.svg);
+    background-position: left,right;
+    background-position-x: 1.4%,100%;
+    background-size: 1rem,contain;
+}
+
+p:last-child {
+    background-image: url(imagenes/bookmarks.svg),url(imagenes/cog.svg);
+    background-position: left,right;
+    background-position-x: 1.4%,100%;
+    background-size: 1rem,contain;
+}
