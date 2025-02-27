@@ -1,0 +1,33 @@
+.modelo1,.modelo2,.modelo3 {
+    width: 750px;
+    height: 350px;
+    border: 2px solid;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction:row;
+    align-content: top;
+    padding: 10px;
+    margin-bottom:50px;
+}    
+
+.modelo2 {
+        flex-direction:row-reverse;
+        align-content:end;
+}
+
+.modelo3 {
+        align-content: center;
+        justify-content: center;
+}
+    
+.modulo {
+    width: 120px;
+    height:120px;
+    background-color: #29ABE2;
+}
+
+p {
+    display:block;
+    margin-bottom: 0px
+}
