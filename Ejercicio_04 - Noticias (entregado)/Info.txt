@@ -1,0 +1,24 @@
+RECOPILATORIO NOTICIAS - ETIQUETAS SEMÁNTICAS
+1 SOLO DOCUMENTO HTML
+Contiene noticias copiadas de diferentes medios de Internet
+ 
+ESTRUCTURA
+DIV CONTENEDOR:
+- HEADER
+- H1 => “Web de recopilación de Noticias”
+- IMG => Busca una imagen de Internet que  haga de logo para el sitio
+- MAIN
+-H2 Título del contenido =>  “Mi selección de noticias…(culturales, deportivas, políticas, etc. [elige la que quieras tú])
+-SECTION 1 por cada periódico (insertar 4 periódicos diferentes)
+- H3 Nombre del periódico
+- ARTICLE 1 por cada noticia (4 noticias por cada periódico)
+-H4 Título de la noticia
+- H5 subtitulo
+- DIV para todos los P del texto
+- IMG
+- A
+- FOOTER
+P -> A  => "Quienes Somos"
+ 
+
+SEGUIR POR https://www.antena3.com/noticias/virales/
