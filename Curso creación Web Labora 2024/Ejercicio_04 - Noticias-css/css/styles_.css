@@ -1,0 +1,49 @@
+@keyframes efectoneon {
+    50% {
+        text-shadow: 0 0 10px #e1e3e1, 0 0 20px #e1e3e1, 0 0 30px #e1e3e1;
+    }
+}
+
+#container {
+    border: 1 dotted rgb(141, 109, 109);
+    margin-left:5%;
+
+    background-color: azure;
+    width: 90%;
+    text-align: justify;
+}
+
+header h1 {
+    z-index: 1;
+    color:aliceblue;
+    top:18%;
+    font-size: 1.5vw;
+    margin-left:3vw;
+    animation: efectoneon 3s infinite;
+    position:absolute;
+}
+
+header img {
+    top:0;
+    left:0;
+    align-self: auto;
+    border:0 solid;
+    border-radius: 50%;
+    width:30%;
+
+}
+
+h2 {
+    text-align:center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:40px;
+    position:absolute;
+    top:0;
+    margin-left:35%;
+    text-decoration:underline;
+}
+
+main h3 {
+    text-align: center;
+    font-size:5vw;
+}
