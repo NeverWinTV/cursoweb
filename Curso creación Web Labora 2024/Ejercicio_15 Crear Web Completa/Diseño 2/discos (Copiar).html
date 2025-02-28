@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    <title>Discos</title>
+    <style>
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9fb;  
+}
+
+.container {
+    height:auto;
+    padding-bottom: 100px;
+}
+/* HEADER */
+.logotipo {
+    position:relative;
+    text-align: center;
+}
+
+.logotipo img {
+    margin:0 auto;
+    display:block;
+   max-width:90%;
+    height:30%;
+}
+
+.logotipo nav ul {
+    
+    z-index:1;
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    list-style: none;
+    gap:5px;
+    left:50%;
+    top: 50%;
+    padding-left:10px;
+    width:100%;
+    max-width:500px;
+  
+}
+
+.logotipo li {
+
+    display:block;
+    width:250px;
+    height: 50px;
+    border:1px solid #b7b7b799  ;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 2px 2px 2px 1px;
+    align-self: center;
+}
+
+.logotipo li a {
+
+    display:block;
+    font-family: Lugrasimo;
+    width:100%;
+    height:40px;
+    z-index:1;
+    font-size:36px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px;
+    color:#B7B7B7aa;
+    background: url('../img/textura-o-fondo-del-lápiz-77186644.webp') no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logotipo li:first-child {
+    align-self: start;
+    left:100px;
+
+}
+
+.logotipo li:last-child {
+    align-self:flex-end;
+
+}
+
+.bienvenida {
+    position: relative;
+    width: 100%;
+    height: 40vh; /* Altura completa de la ventana */
+    overflow: hidden;
+}
+
+.bienvenida video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que el video cubra todo el área sin distorsión */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.bienvenida .texto-video {
+    position: relative;
+    z-index: 2; /* Para que el contenido esté sobre el video */
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-video h1 {
+    color:#38034298;
+
+    font-size: 5rem;
+    text-shadow: 0 1px 0 #ccc, 
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+
+    margin-bottom: 50px;
+
+}
+
+.texto-video h2 {
+    color:transparent;
+    text-shadow: 1px 2px 2px #474747;
+    background: linear-gradient(135deg, #efc5ca 0%,#d24b5a 37%,#ba2737 51%,#f18e99 100%);
+    background-clip: text;
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+.adorno {
+    display:block;
+    margin:0 auto;
+}
+main h2 {
+    display:block;
+    background-color:lightgray;
+
+    text-align:center;
+    font-size: 3rem;
+    font-family: lugrasimo;
+    text-decoration: underline;
+}
+
+section {
+
+    margin-top:50px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left:4%;
+    margin-right:4%;
+    
+}
+
+article {
+    margin:0 auto;
+    background-color:white;
+    border:1px solid lightgray;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px;
+    width: 49%;
+    height: 100%;
+    position:relative;
+    padding-top:5px;
+    padding-left: 10px;    
+    margin-bottom: 40px;
+   
+}
+
+
+article > h3 {
+
+    display:box;
+    margin:0 auto;
+    text-align:center;
+    width:fit-content;
+    border: 1px solid white;
+    border-top: 1px solid transparent;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;;
+    padding: 2px 20px 5px;
+    background-color: lightgray;
+    margin-top:-5px;
+}
+
+article img {
+    max-width: 200px;
+    height:120px;
+    position:absolute;
+    right:40px;
+    top:10px;
+    border:1px groove lightgrey;
+}
+
+article button {
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin:20px auto;
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+         
+}
+
+article button:active {
+    box-shadow: 0px 0px 0px;
+   
+}
+
+article details {
+    margin-top:10px;
+}
+
+ /* FIN MAIN */
+
+footer {
+    background-color: lightgray;
+}
+
+.creditos h6,ul {
+    display:block;
+    text-align:center;
+    margin:0 auto;
+}
+
+.creditos > ul {
+    column-count: 2;
+    column-width: 10px;
+    column-gap: 3px;
+    list-style: none;
+    font-size: x-small;
+}
+
+.creditos li:first-child {
+    text-align:right;
+    border-right: 1px solid;
+    padding-right:5px;
+}
+
+.creditos  li:last-child {
+        text-align:left;
+}
+
+/* Estado activo de la página */
+
+.activo a {
+
+   text-decoration: line-through;
+   
+}
+
+/* Trampantojo para que los details no distorsionen la matriz */
+
+details[open] {
+    position: absolute;
+    width: 100.2%;
+    background: #fff;
+    z-index:1;
+    border:1px solid rgba(211, 211, 211, 0.890);
+    border-top: 1px solid transparent;
+    left: -1px;
+    top:120px;
+    padding-left:10px;   
+    border-radius: 0 0 30px 30px;
+    box-shadow: 2px 2px 2px;
+    }
+
+article:nth-child(2) details[open] {
+    width:100.4%;
+    z-index: 3;
+    }
+
+    article:nth-child(2) details[open] article:last-child {
+       background-color:#ba2737;
+        }
+
+
+
+article:last-child details[open] {
+    width: 100.4%;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logotipo">
+            <img src="img/topweb.png" alt="Logo libros peliculas musica">
+            <nav>
+                <ul>
+                <li class="activo"><a href="#discos" target="_self">Discos</a></li>
+                <li><a href="libros.html" target="_self">Libros</a></li>
+                <li><a href="peliculas.html" target="_self">Películas</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="bienvenida">
+                <video autoplay muted loop>
+                <source src="img/biblio.mp4" type="video/mp4">
+                </video>
+                <div class="texto-video">
+            <h1>Biblioteca discográfica</h1>
+            <h2>Descubre nuestra extensa variedad de títulos</h2>
+            </div>
+        </div>
+        </header>
+        <main>
+            <h2 id="libros">Catálogo</h2>
+            <section>
+                <article>
+                    <h3>Agila</h3>
+                    <h4>Información</h4>
+                    <p>Año:1996</p>
+                    <p>Artista: Extremoduro</p>
+                    <p>Genero: Hard-Rock</p>
+                    <p>Nº de pistas: 13</p>
+                    <p>Duración: 43' 22''</p>
+                    <img src="img/discos/extremoduro-agila-portada.jpg" alt="Portada disco Agila de Estremoduro">
+                    <button>Comprar Artículo</button> 
+                </article>
+                <article>
+                    <h3>Thriller</h3>
+                    <h4>Información</h4>
+                    <p>Año:1982</p>
+                    <p>Artista: Michael Jackson</p>
+                    <p>Genero: Pop</p>
+                    <p>Nº de pistas: 7</p>
+                    <p>Duración: 42' 16''</p>
+                    <img src="img/discos/thriller.jpg" alt="Portada disco Thriller de Michael Jackson">
+                    <button>Comprar Artículo</button>
+                </article>
+                <article>
+                    <h3>Rockola</h3>
+                    <h4>Información</h4>
+                    <p>Año:1996</p>
+                    <p>Artista: Extremoduro</p>
+                    <p>Genero: Techno,Trance</p>  
+                    <p>Nº de Pistas: CD1: 20 | CD2: 18 | CD3: 17</p>
+                    <p>Duración: 180' 24''</p>
+                    <img src="img/discos/rockola.jpg" alt="Portada disco Rockola Mislata">
+                    <button>Comprar Artículo</button>
+                </article>
+                <article>
+                    <h3>Armas pal Pueblo</h3>
+                    <h4>Información</h4>
+                    <p>Año:1993</p>
+                    <p>Artista: Def Con Dos</p>
+                    <p>Genero:  </p>
+                    <p>Nº de pistas: 14</p>
+                    <p>Duración: 45' 10''</p>
+                    <img src="img/discos/defcondos.jpg" alt="Portada disco Armas pal pueblo de Def con Dos">
+                    <button>Comprar Artículo</button>
+                </article>
+            </section>
+        </main>
+    </div>
+        <footer>
+            <div class="creditos">
+                <h6>Diseño creado para el curso de creación de páginas web de Labora</h6>
+                <ul>
+                    <li><a href="#" alt="Privacidad">Privacidad</a></li>
+                    <li><a href="#" alt="Aviso Legal">Aviso Legal</a></li>
+                    </ul>             
+            </div>
+        </footer>   
+</body>
+</html>
